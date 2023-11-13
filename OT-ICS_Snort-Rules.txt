@@ -1,0 +1,5 @@
+alert tcp any 80 -> any any (msg: "Allen-Bradley/Rockwell Automation ML1100 URL Path Activity-USER MANAGEMENT"; content:"adm_user.htm"; sid:1; rev:1; classtype:bad-unknown;)
+alert tcp any 80 -> any any (msg: "Allen-Bradley/Rockwell Automation ML1100 URL Path Activity- NETWORK SETTINGS ACCESS"; content:"netset.htm"; sid:1; rev:1; classtype:bad-unknown;)
+alert tcp any 80 -> any any (msg: "Allen-Bradley/Rockwell Automation ML1100 URL Path Activity- DATA VIEW ACCESS"; content:"dataview.htm"; sid:1; rev:1; classtype:bad-unknown;)
+alert tcp any 80 -> any any (msg: "Allen-Bradley/Rockwell Automation ML1100 URL Path Activity- NETWORK STATS ACCESS"; content:"netstat.htm"; sid:1; rev:1; classtype:bad-unknown;)
+alert tcp any 80 -> any any (msg: "Allen-Bradley/Rockwell Automation ML1100 URL Path Activity- DIAGNOSTICS OVERVIEW ACCESS"; content:"diagover.htm"; sid:1; rev:1; classtype:bad-unknown;)
